@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kutay Sayın - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div id="lightbox" class="lightbox">
+            <span class="close">&times;</span>
+            <img class="lightbox-content" id="lightbox-img">
+        </div>
+        
+        <div class="logo">
+            Kutay Sayın
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" aria-label="Home">Home</a></li>
+                <li><a href="#about" aria-label="About Me">About Me</a></li>
+                <li><a href="#skills" aria-label="Skills">Skills</a></li>
+                <li><a href="#education" aria-label="Education">Education</a></li>
+                <li><a href="#projects" aria-label="Projects">Projects</a></li>
+                <li><a href="#experience" aria-label="Experience">Experience</a></li>
+                <li><a href="#certifications" aria-label="Certifications">Certifications</a></li>
+                <li><a href="#contact" aria-label="Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="home-content">
+            <div class="profile-photo-wrapper">
+                <img src="me.jpg" alt="Kutay Sayın" class="profile-photo">
+                <div class="lightning"></div>
+            </div>
+            <h1 class="animate">Welcome to My Portfolio</h1>
+            
+            <button class="cta-button" onclick="window.location.href='#contact'">Join Us</button>
+        </div>
+    </section>
+
+    <section id="about" class="section-box">
+        <h2>About Me</h2>
+        <p>Hello, I am Kutay Sayın, a second-year computer programming student at Izmir University of Economics. I am proficient in web and application development.</p>
+        <a href="https://github.com/RustyCrovbar/kutaysayin-cv.github.io/blob/main/%C3%96zge%C3%A7mi%C5%9F%20-%20Cv.pdf" class="cta-button" target="_blank">Download My CV</a>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill-section">
+            <h3>Languages I Know</h3>
+            <ul>
+                <li>Turkish (Native)</li>
+                <li>English (B1 Level)</li>
+            </ul>
+        </div>
+        <div class="skill-section">
+            <h3>Programming Languages</h3>
+            <ul class="programming-languages">
+                <li><img src="html logo.png" alt="HTML"> HTML</li>
+                <li><img src="css logo.png" alt="CSS"> CSS</li>
+                <li><img src="clogo.png" alt="C#"> C#</li>
+                <li><img src="java logo.png" alt="Java"> Java</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education"></div>
+        <p>Istanbul Uğur Anatolian High School - Graduate</p>
+        <p>Currently a student at İzmir University of Economics, Computer Programming (2nd year)</p>
+    </section>
+
+    <section id="projects" class="section-box">
+        <h2>Projects</h2>
+        <div class="project">
+            <img src="socialnet.jpg" alt="Project 1">
+            <div class="overlay">
+                <div class="text">View</div>
+            </div>
+            <p>Social Net</p>
+            <p>A Social Media Project</p>
+        </div>
+        <div class="project">
+            <img src="kutay_sayın.jpg" alt="Project 2">
+            <div class="overlay">
+                <div class="text">View</div>
+            </div>
+            <p>Movie Poster</p>
+            <p>My personal design about Fight Club </p>
+        </div>
+        <div class="project">
+            <img src="synopsis.jpg" alt="Project 3">
+            <div class="overlay">
+                <div class="text">View</div>
+            </div>
+            <p>Synopsis</p>
+            <p>My first Synopsis project</p>
+        </div>
+        <div class="project">
+            <img src="site.jpg" alt="Project 4">
+            <div class="overlay">
+                <div class="text">View</div>
+            </div>
+            <p>BLACK GYM</p>
+            <p>My First WebSite</p>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience">
+            <h3>Software Developer Intern</h3>
+            <p>Randevu Teknolojileri A.Ş.</p>
+            <p>Duration: June 2023 - August 2023</p>
+            <p>This platform facilitates appointment processes by enabling users to make online appointments for various services. It can be used to complete appointments in different fields such as health, beauty, and consultancy.</p>
+        </div>
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <div class="certification">
+            <h3>Microsoft Certified: Azure Fundamentals</h3>
+            <p>Validated foundational knowledge of cloud services and how Microsoft Azure provides them.</p>
+        </div>
+        <div class="certification">
+            <h3>Certified ScrumMaster (CSM)</h3>
+            <p>Earned certification demonstrating proficiency in Scrum principles and practices.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-icons">
+            <a href="https://www.instagram.com/kutaysay1n/" target="_blank"><img src="insta.webp" alt="Instagram"></a>
+            <a href="https://github.com/RustyCrovbar/kutaysayin.github.io" target="_blank"><img src="github.png" alt="GitHub"></a>
+        </div>
+        <form action="mailto:rustycrovbar@hotmail.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <p>Email: rustycrovbar@hotmail.com</p>
+        <p>Phone: 0544 554 6470</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Kutay Sayın. All rights reserved.</p>
+    </footer>
+
+    <canvas id="canvas"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
